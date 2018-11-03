@@ -1,0 +1,296 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+body{
+    background: #eaeff9;
+    color: #333333;
+    font-size:14px;
+}
+body,input,select,div{
+    font-family: 'Microsoft Yahei';
+}
+input,select{
+    outline: none;
+}
+.relative{
+    position: relative;
+}
+.check_box{
+    width: 100%;
+    margin-top: 30px;
+}
+.check_left{
+    width:31%;
+    float: left;
+    background: #ffffff;
+    padding:0 0 15px 20px;
+    -webkit-box-shadow: 1px -2px 2px 0.5px #d8dce5;
+    -moz-box-shadow: 1px -2px 2px 0.5px #d8dce5;
+    box-shadow: 1px -2px 2px 0.5px #d8dce5;
+    position: relative;
+}
+.check_left_hide{
+    position: absolute;
+    left:-32.5% ;
+    z-index: 2;
+}
+.scale{
+    position: absolute;
+    right: -19px;
+    top:50%;
+}
+.check_title{
+    height: 34px;
+    line-height:32px;
+    border-bottom:1px dashed #e7e7e7;
+    font-size: 16px;
+    color: #333333;
+}
+.check_red{
+    border-left:3px solid #fb3751;
+    margin-right: 5px;
+}
+.check_tab,.check_tabCont{
+    padding-right: 20px;
+}
+.check_tab{
+    margin-bottom: 10px;
+}
+.check_tab li{
+    width: 25%;
+    text-align: center;
+    float: left;
+    height: 20px;
+    padding: 20px 0 8px 0;
+    border-bottom: 1px solid #e6e6e6;
+}
+.clear{
+    clear: both;
+}
+.check_tab .active{
+    color: #558efa;
+    border-bottom: 2px solid #558efa;
+}
+.check_content{
+    margin-top: 15px;
+}
+.check_tabCont{
+    overflow: auto;
+    display: none;
+}
+.block{
+    display: block;
+}
+.check_dl{
+    width: 98%;
+    border:1px solid #e6ebf4;
+    border-top:0;
+    margin-left: 1%;
+    position: relative;
+}
+.check_dl:first-child{
+    border-top:1px solid #e6ebf4;
+}
+.check_dl:last-child{
+    margin-bottom: 15px;
+}
+.check_dl dt,.check_dl dd{
+    float: left;
+    height: 43px;
+    line-height: 43px;
+}
+.check_dl dt{
+    width: 30%;
+    text-align: right;
+    padding-right: 10px;
+    border-right:1px solid #e6ebf4;
+    background-color: #f7faff;
+}
+.check_dl dd{
+    padding-left: 15px;
+}
+.check_dl:after{
+    display: block;
+    clear: both;
+    content: "";
+}
+.check_information{
+    display: none;
+    position: absolute;
+    left: -1%;
+    text-indent: 8px;
+    padding:0 4px;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    -webkit-box-shadow: -1px 1px 1px 0.5px #e5eaf3,1px -1px 1px 0.5px #e5eaf3;
+    -moz-box-shadow: -1px 1px 1px 0.5px #e5eaf3,1px -1px 1px 0.5px #e5eaf3;
+    box-shadow: -1px 1px 1px 0.5px #e5eaf3,1px -1px 1px 0.5px #e5eaf3;
+    background: #ffffff;
+    z-index: 2;
+}
+.check_select{
+    position: absolute;
+    left: 70px;
+    top: 1px;
+    z-index: 2;
+    color: #333;
+}
+.check_more{
+    font-size: 14px;
+    padding:0 15px;
+    color: #333;
+    background:url("../img/down.png") no-repeat center right;
+}
+.check_select ul{
+    display: none;
+    -webkit-box-shadow: -1px 1px 1px 0.5px #e5eaf3,1px -1px 1px 0.5px #e5eaf3;
+    -moz-box-shadow: -1px 1px 1px 0.5px #e5eaf3,1px -1px 1px 0.5px #e5eaf3;
+    box-shadow: -1px 1px 1px 0.5px #e5eaf3,1px -1px 1px 0.5px #e5eaf3;
+}
+.check_select li{
+    text-align: center;
+    font-size: 12px;
+    line-height: 25px;
+    background: #ffffff;
+}
+.check_select li:hover{
+    background: #000;
+    color: #ffffff;
+}
+.check_right{
+    width: 63%;
+    float: right;
+    padding: 0 15px 15px 20px;
+    background: #ffffff;
+    position: relative;
+    -webkit-box-shadow: -1px -2px 2px 0.5px #d8dce5;
+    -moz-box-shadow: -1px -2px 2px 0.5px #d8dce5;
+    box-shadow: -1px -2px 2px 0.5px #d8dce5;
+}
+.check_right_show{
+    width: 96%;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+}
+.check_back{
+    position: absolute;
+    top: -15px;
+    right: 20px;
+}
+.check_pic{
+    width: 100%;
+    height: 450px;
+    overflow: auto;
+    margin:20px 0;
+    text-align: center;
+    -webkit-box-shadow: -1px 1px 2px 0.5px #ebebeb,1px -1px 1px 0.5px #ebebeb;
+    -moz-box-shadow: -1px 1px 2px 0.5px #ebebeb,1px -1px 1px 0.5px #ebebeb;
+    box-shadow: -1px 1px 2px 0.5px #ebebeb,1px -1px 1px 0.5px #ebebeb;
+}
+#slide img{
+    float: left;
+}
+.check_slide{
+    width: 94.5%;
+    margin:0 auto;
+}
+.check_slide li{
+    width: 10%;
+    float: left;
+    text-align: center;
+    margin-left: 2.5%;
+    position: relative;
+}
+.check_slide li div{
+    width: 100%;
+    overflow: hidden;
+    white-space:nowrap;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+.check_slide li div.check_new{
+    position: absolute;
+    top: -10px;
+    right: 0;
+    width: 30px;
+    padding:1px 3px 3px 3px;
+    font-size: 12px;
+    text-align: center;
+    font-weight:lighter;
+    letter-spacing: 1px;
+    background: #fb3751;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    color: #ffffff;
+}
+.check_slide li img{
+    border:1px solid #e7e7e7;
+    margin-bottom: 5px;
+}
+.check_scalePic{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+.check_img{
+    width:65%;
+    margin: 0 auto;
+    border-left:1px solid #000;
+    border-right:1px solid #000;
+}
+.check_img_scale{
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    left:0;
+    z-index: 2;
+    border: none;
+    text-align: center;
+    -webkit-box-shadow: -1px 1px 2px 0.5px #ebebeb,1px -1px 1px 0.5px #ebebeb;
+    -moz-box-shadow: -1px 1px 2px 0.5px #ebebeb,1px -1px 1px 0.5px #ebebeb;
+    box-shadow: -1px 1px 2px 0.5px #ebebeb,1px -1px 1px 0.5px #ebebeb;
+}
+.check_img img{
+    width: 100%;
+    height: 100%;
+}
+.check_num{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width:100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: url("../img/bg.png") repeat-x top center;
+}
+.check_gray{
+    color: #999999;
+}
+.border-bot{
+    border-bottom: none;
+}
+.border-top{
+    border-top:1px solid #e6ebf4;
+}
+.nice-wrapper {}
+.nicescroll-rails {
+    background-color: rgb(245, 245, 245);
+}
+.nicescroll-cursors {
+    border: none !important;
+    background-color: #e6e6e6 !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+}
